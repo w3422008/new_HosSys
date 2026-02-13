@@ -1,15 +1,22 @@
 /* login.css - ログイン画面専用スタイル（画像レイアウト・色に合わせて調整） */
+/* メインコンテンツ 左右幅調整 */
 .wrap {
   max-width: 900px;
   margin: 0 auto;
 }
-h1 {
-  color: #217a3a;
-  font-size: 2.5rem;
+
+/* システムロゴ */
+h1.title {
   font-weight: 700;
   letter-spacing: 0.05em;
   margin-left: 2.5rem;
 }
+
+h1.title:hover {
+  color: #217a3a;
+}
+
+/* ↓　入力欄関連　↓ */
 form {
   padding: 0 2rem 2rem 2rem;
   max-width: 300px;
@@ -79,6 +86,9 @@ input[type="password"]:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 1000px #f8fefb inset !important;
   -webkit-text-fill-color: #333 !important;
 }
+/* ↑　入力欄関連　↑ */
+
+/* ログインボタン */
 button {
   width: 100%;
   max-width: 400px;
@@ -97,6 +107,8 @@ button {
 button:hover {
   background: #1a5e2c;
 }
+
+/* エラーメッセージ表示 */
 .err {
   color: #b00020;
   margin-bottom: 0.5rem;
