@@ -1,0 +1,8 @@
+<?php
+// config.php（基礎設定ファイル）の読み込み
+require_once 'config/config.php';
+
+// database.php（データベース接続設定ファイル）の読み込み
+$db = require_once 'config/database.php';
+// ↑消す？
+
