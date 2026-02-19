@@ -1,125 +1,5 @@
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* ナビゲーションバーのスタイル */
-    .navbar {
-        border-bottom: 1px solid #e5e5e5;
-        padding: 2.5rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-    }
-
-    /* ユーザーメニューボタン */
-    .navbar-user-btn {
-        background: none;
-        border: none;
-        font-size: 2.5rem;
-        color: #217a3a;
-        cursor: pointer;
-        padding: 8px;
-        transition: color 0.2s ease;
-        position: relative;
-    }
-
-    .navbar-user-btn:hover {
-        color: #333;
-    }
-
-    .navbar-user-btn svg path {
-        fill: #217a3a;
-        transition: fill 0.2s ease;
-    }
-
-    .navbar-user-btn:hover svg path {
-        fill: #333;
-    }
-
-    /* ドロップダウンメニュー */
-    .dropdown-menu {
-        position: absolute;
-        top: 60px;
-        right: 24px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        min-width: 165px;
-        z-index: 1000;
-        display: none;
-        overflow: hidden;
-    }
-
-    .dropdown-menu.active {
-        display: block;
-    }
-
-    .dropdown-menu-item {
-        padding: 12px 16px;
-        list-style: none;
-    }
-
-    .dropdown-menu-item:first-child {
-        padding-top: 12px;
-    }
-
-    .dropdown-menu-item:last-child {
-        padding-bottom: 12px;
-    }
-
-    /* ロールバッジ */
-    .role-badge {
-        display: inline-block;
-        background-color: #808080;
-        color: white;
-        padding: 4px 12px;
-        border-radius: 16px;
-        font-size: 12px;
-        font-weight: 500;
-    }
-
-    .user-id {
-        color: #808080;
-        font-size: 13px;
-        font-weight: 500;
-    }
-
-    .user-name {
-        color: #333;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    /* 区切り線 */
-    .dropdown-divider {
-        height: 1px;
-        background-color: #e5e5e5;
-        margin: 8px 10px;
-    }
-
-    /* メニューリンク */
-    .dropdown-link {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #333;
-        text-decoration: none;
-        font-size: 14px;
-        padding: 10px 16px;
-        transition: background-color 0.2s ease;
-    }
-
-    .dropdown-link:hover {
-        background-color: #f9f9f9;
-        color: #333;
-    }
-</style>
-
 <!-- ナビゲーションバー -->
+<link rel="stylesheet" href="<?php echo CSS_PATH; ?>navigasion.css">
 <nav class="navbar">
 
     <h1 class="title">neoシステム（仮）</h1>
@@ -148,11 +28,11 @@
             <a href="#" class="dropdown-link dropdown-menu-item">
                 <span>パスワード変更</span>
             </a>
-            <a href="logout.php" class="dropdown-link dropdown-menu-item">
+            <a href="<?php echo APP_PATH; ?>Controllers/login/login.php" class="dropdown-link dropdown-menu-item">
                 <span>ログアウト</span>
             </a>
         </div>
     </div>
 </nav>
 
-<script src="<?php echo JS_PATH; ?>common.js"></script>
+<script src="<?php echo JS_PATH; ?>navigasion.js"></script>
