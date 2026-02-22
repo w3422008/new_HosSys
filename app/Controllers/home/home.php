@@ -1,11 +1,12 @@
 <?php
 // config.php（基礎設定ファイル）の読み込み
-require_once '../../../config/config.php';
+require_once BASE_PATH . 'config/config.php';
+
 // セッションの開始
 session_start();
 
 // ユーザーデータの取得
-require_once '../common/get_user_data.php';
+require_once APP_PATH . 'Services/common/get_user_data.php';
 
 // ログイン画面の表示
-include_once '../../Views/home/home_view.php';
+include_once APP_PATH . 'Views/home/home_view.php';
