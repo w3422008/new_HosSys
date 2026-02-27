@@ -20,8 +20,10 @@
             </div>
             <div class="dropdown-menu-item">
                 <div class="user-info">
-                    <span class="user-id">k6954231</span>
-                    <span class="user-name">わたし</span>
+                    <span class="user-id"><?php echo $userData['user_id']; ?></span><br>
+                    <span class="user-name">
+                        <?php echo $userData['user_name']; ?>
+                    </span>
                 </div>
             </div>
             <div class="dropdown-divider"></div>
